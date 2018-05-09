@@ -1,7 +1,7 @@
 .container {
     width: 90%;
     height: 90%;
-    border: blue 3px solid;
+    border: purple 3px solid;
     padding: 10px;
     text-align: center;
 }

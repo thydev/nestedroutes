@@ -1,0 +1,26 @@
+<div class="container">
+
+    <div style="text-align:center">
+      <h1>
+        Products Root
+      </h1>
+    </div>
+    <p>
+      <!-- notice the lack of a slash in front of 'details' -->
+      <!-- without the slash, details/5 will be appended to our existing route, which is /products -->
+      <a [routerLink] = "['details', 5]"> Go to /products/details/5 </a> | 
+
+      <!-- notice the slash in front of 'products' -->
+      <!-- without the slash, products/details/5 would be appended to our existing route, resulting in 
+      reviews/products/details/5, which we would not be able to handle with our routes written as they are now -->
+      <a [routerLink] = "['/products', 'details', 5]"> Go to /products/details/5 </a>  
+    </p>
+    <p>
+        <a [routerLink] = "['brand', 5]"> Go to /products/brand/5 </a>
+    </p>
+    <p>
+        <a [routerLink] = "['category', 5]"> Go to /products/category/5 </a>
+    </p>
+    <router-outlet></router-outlet>
+  </div>
+  

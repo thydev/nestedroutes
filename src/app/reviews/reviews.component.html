@@ -1,0 +1,21 @@
+<div class="container">
+
+    <div style="text-align:center">
+      <h1>
+        Reviews Root
+      </h1>
+    </div>
+    <p>
+      <!-- notice the lack of a slash in front of 'details' -->
+      <!-- without the slash, details/5 will be appended to our existing route, which is /products -->
+      <a [routerLink] = "['details', 5]"> Go to /reviews/details/5 </a> | 
+    </p>
+    <p>
+        <a [routerLink] = "['author', 5]"> Go to /reviews/author/5 </a>
+    </p>
+    <p>
+        <a [routerLink] = "['all', 5]"> Go to /reviews/all/5 </a>
+    </p>
+    <router-outlet></router-outlet>
+  </div>
+  
